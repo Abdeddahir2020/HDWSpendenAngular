@@ -16,7 +16,7 @@ export class UploadFileService {
 
     const newRequest = new HttpRequest('POST', 'http://localhost:8080/uploadCSVFile', data, {
       reportProgress: true,
-      responseType: 'text'
+      responseType: 'text' 
     });
 
     return this.https.request(newRequest);
