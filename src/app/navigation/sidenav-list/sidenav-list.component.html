@@ -8,6 +8,15 @@
   <a mat-list-item routerLink="#" (click)="onSidenavClose()">
     <mat-icon>account_balance</mat-icon><span class="nav-caption">Account Actions</span>
   </a>
+
+  <a mat-list-item routerLink="/spender/list" (click)="onSidenavClose()">
+    <mat-icon>assignment_ind</mat-icon> <span class="nav-caption">Spender Actions</span>
+  </a>
+
+  <a mat-list-item routerLink="/FileUpload" (click)="onSidenavClose()">
+    <mat-icon>assignment_ind</mat-icon> <span class="nav-caption">File Upload</span>
+  </a>
+
   <mat-list-item [matMenuTriggerFor]="menu">
     <mat-icon>unfold_more</mat-icon>
     <a matline>Example</a>

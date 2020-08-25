@@ -15,6 +15,14 @@
           <li>
               <a routerLink="/account">Account Actions</a>
           </li>
+
+        <li>
+          <a routerLink="/upload">File Upload</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/spender/list']" routerLinkActive="active"
+             [routerLinkActiveOptions]="{exact: true}"> Spender Actions </a>
+        </li>
       </ul>
   </div>
 </mat-toolbar>

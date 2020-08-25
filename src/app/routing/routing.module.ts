@@ -5,7 +5,9 @@ import { HomeComponent } from '../home/home.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent},
-  { path: '', redirectTo: '/home', pathMatch: 'full' }
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'spender', loadChildren: () => import('../spender/spender.module').then(m => m.SpenderModule) },
+  { path: '**', redirectTo: '/404', pathMatch: 'full'}
 ];
 
 @NgModule({
