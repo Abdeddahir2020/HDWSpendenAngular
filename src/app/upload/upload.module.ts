@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class UploadFileService {
+export class UploadModule {
 
   constructor(private https: HttpClient) { }
 
