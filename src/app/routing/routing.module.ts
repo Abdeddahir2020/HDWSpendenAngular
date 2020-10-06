@@ -20,8 +20,6 @@ const routes: Routes = [
   exports: [
     RouterModule
   ],
-  declarations: [
-  UploadComponent
-  ]
+  declarations: []
 })
 export class RoutingModule { }

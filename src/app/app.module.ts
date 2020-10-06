@@ -11,7 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { RoutingModule } from './routing/routing.module';
 import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
-
+import { UploadComponent } from './upload/upload.component';
 
 
 @NgModule({
@@ -20,7 +20,8 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
     LayoutComponent,
     HomeComponent,
     HeaderComponent,
-    SidenavListComponent
+    SidenavListComponent,
+    UploadComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +31,9 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
     RoutingModule,
     HttpClientModule
   ],
+    exports: [
+      MaterialModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
